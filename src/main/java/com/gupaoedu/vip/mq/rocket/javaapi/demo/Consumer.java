@@ -16,7 +16,7 @@ public class Consumer {
         // 创建消费者
         DefaultMQPullConsumer consumer = new DefaultMQPullConsumer("my_test_consumer_group");
 //        DefaultLitePullConsumer
-        consumer.setNamesrvAddr("192.168.8.147:9876");
+        consumer.setNamesrvAddr("192.168.100.101:9876");
                 consumer.start();
         // 从指定topic中拉取所有消息队列
         Set<MessageQueue> mqs = consumer.fetchSubscribeMessageQueues("test_topic_1");

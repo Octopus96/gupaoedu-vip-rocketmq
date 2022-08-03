@@ -14,7 +14,7 @@ public class AsyncProducer {
         //Instantiate with a producer group name.
         DefaultMQProducer producer = new DefaultMQProducer("my_test_aysnc_group");
         // Specify name server addresses.
-        producer.setNamesrvAddr("192.168.8.147:9876");
+        producer.setNamesrvAddr("192.168.100.101:9876");
         //Launch the instance.
         producer.start();
         producer.setRetryTimesWhenSendAsyncFailed(0);

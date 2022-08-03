@@ -28,7 +28,7 @@ public class DiskSpaceTestProducer {
 
     public static void main(String[] args) throws Exception {
         DefaultMQProducer producer = new DefaultMQProducer("BatchProducerGroupName");
-        producer.setNamesrvAddr("192.168.8.147:9876");
+        producer.setNamesrvAddr("192.168.100.101:9876");
         producer.start();
 
         //If you just send messages of no more than 1MiB at a time, it is easy to use batch
